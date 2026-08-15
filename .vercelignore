@@ -1,0 +1,15 @@
+.git
+**/.env
+**/.env.*
+!**/.env.example
+**/.venv
+**/node_modules
+**/__pycache__
+**/.pytest_cache
+**/*.db
+**/*.sqlite
+**/*.sqlite3
+frontend/dist
+public
+releases
+image*.png

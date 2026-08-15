@@ -1,0 +1,6 @@
+{
+  "name": "butterlane-vercel",
+  "private": true,
+  "engines": { "node": "22.x" },
+  "scripts": { "build": "node scripts/build-vercel.mjs" }
+}

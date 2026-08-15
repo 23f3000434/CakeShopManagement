@@ -1,0 +1,14 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": "flask",
+  "buildCommand": "node scripts/build-vercel.mjs",
+  "functions": {
+    "index.py": {
+      "maxDuration": 60,
+      "excludeFiles": "{frontend/node_modules/**,frontend/src/**,backend/tests/**,backend/.venv/**,**/__pycache__/**,**/.pytest_cache/**,docs/**,releases/**,public/**}"
+    }
+  },
+  "headers": [
+    { "source": "/api/(.*)", "headers": [{ "key": "Cache-Control", "value": "no-store" }] }
+  ]
+}
